@@ -17,15 +17,18 @@ function App() {
         { path: "portfolio", element: <Portfolio /> },
         { path: "contact", element: <Contact /> },
         { path: "*", element: <NotFound /> },
-      ],
-    },
-  ]);
+      ]}
+  ],
+{
+  basename:"/React-project"
+}  
+)
 
   return (
     <>
       <RouterProvider router={x}></RouterProvider>
     </>
-  );
+  )
 }
 
 export default App;
